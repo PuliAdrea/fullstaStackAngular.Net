@@ -9,9 +9,6 @@ namespace libraryAPI.BLL
 {
     public class AuthorsBLL
     {
-        private readonly ApplicationDbContext dbContext;
-
-
         internal void Insert(List<Authors> lstAuthors)
         {
             try

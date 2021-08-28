@@ -1,4 +1,5 @@
 ﻿using libraryAPI.BLL;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ namespace libraryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class SyncUpController : ControllerBase
     {
         [HttpGet]

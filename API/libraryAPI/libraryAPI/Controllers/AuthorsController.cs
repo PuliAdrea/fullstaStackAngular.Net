@@ -1,6 +1,7 @@
 ﻿using libraryAPI.BLL;
 using libraryAPI.Data;
 using libraryAPI.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -12,6 +13,7 @@ namespace libraryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AuthorsController : ControllerBase
     {
         

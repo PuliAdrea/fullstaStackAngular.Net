@@ -12,7 +12,7 @@ namespace libraryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+   // [Authorize]
     public class BooksController : ControllerBase
     {
         [HttpGet]

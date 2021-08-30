@@ -23,7 +23,6 @@ namespace libraryAPI.Controllers
 
 
         [HttpPost]
-        [AllowAnonymous]
         public ActionResult<object> Login([FromBody] User user)
         {
             string secret = this._configuration.GetValue<string>("Secret");

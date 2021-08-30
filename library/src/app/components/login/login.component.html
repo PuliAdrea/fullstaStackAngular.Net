@@ -1,1 +1,23 @@
 <p>login works!</p>
+<mat-card>
+    <mat-card-title>
+        Inicio de sesión
+    </mat-card-title>
+    
+        <p>
+            
+                <input type="text" [(ngModel)]="email" matInput>
+           
+        </p>
+        <p>
+           
+                <input type="text" [(ngModel)] = "pasword" matInput>
+           
+        </p>
+            <div>
+                <button (click)="login()" mat-raised-button> Iniciar Sesión
+                </button>
+            </div>
+        
+    
+</mat-card>

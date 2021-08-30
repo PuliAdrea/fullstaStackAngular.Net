@@ -21,12 +21,12 @@ namespace libraryAPI.Controllers
             bool response = syncUp.Start();
             if (response)
             {
-                return StatusCode(StatusCodes.Status200OK);
+                return StatusCode(StatusCodes.Status200OK, true);
 
             }
             else 
             {
-                return StatusCode(StatusCodes.Status404NotFound);
+                return StatusCode(StatusCodes.Status404NotFound, false);
             }
 
         }
